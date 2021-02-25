@@ -1,6 +1,6 @@
 from utils import *
 
-data = web.DataReader('600519.ss', 'yahoo', dt.datetime(2014, 1, 1), dt.datetime(2019, 9, 30))
+data = web.DataReader('600519.ss', 'yahoo', datetime.datetime(2014, 1, 1), datetime.datetime(2019, 9, 30))
 seq_len = 21
 dim_in = 4
 dim_out = 4

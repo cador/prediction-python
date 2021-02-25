@@ -1,6 +1,6 @@
 from utils import *
 
-data = web.DataReader('600519.ss', 'yahoo', dt.datetime(2014, 1, 1), dt.datetime(2019, 9, 30))
+data = web.DataReader('600519.ss', 'yahoo', datetime.datetime(2014, 1, 1), datetime.datetime(2019, 9, 30))
 sub_data = data.iloc[:-30, :4]
 for i in range(4):
     p_value = stat.adfuller(sub_data.values[:, i], 1)[1]

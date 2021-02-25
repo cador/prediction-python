@@ -1,6 +1,6 @@
 from utils import *
 
-data = web.DataReader('600519.ss', 'yahoo', dt.datetime(2019, 8, 1), dt.datetime(2019, 8, 31))
+data = web.DataReader('600519.ss', 'yahoo', datetime.datetime(2019, 8, 1), datetime.datetime(2019, 8, 31))
 data.head()
 #               High         Low        Open       Close    Volume   Adj Close
 # Date
