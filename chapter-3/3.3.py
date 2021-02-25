@@ -1,6 +1,5 @@
 from utils import *
 
-
 # 加载数据、转换并进行标准化处理
 passengers = pd.read_csv(AIR_PASSENGERS)
 data = list()
