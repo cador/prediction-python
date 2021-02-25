@@ -1,13 +1,4 @@
-import pandas as pd
-import numpy as np
-from utils.data_path import BOYS
-from matplotlib import pyplot as plt
-from utils.data_path import IRIS
-from utils.udf import get_split_value
-import random
-
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+from utils import *
 
 boys = pd.read_csv(BOYS)
 # 这里根据BMI指数，将bmi属性泛化成体重类型字段 w_type

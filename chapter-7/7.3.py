@@ -1,7 +1,4 @@
-import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split
-from utils.data_path import IRIS
+from utils import *
 
 # 准备基础数据
 iris = pd.read_csv(IRIS)

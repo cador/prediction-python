@@ -1,7 +1,4 @@
-import pandas_datareader.data as web
-import datetime as dt
-from pyecharts import options as opts
-from pyecharts.charts import Kline
+from utils import *
 
 data = web.DataReader('600519.ss', 'yahoo', dt.datetime(2019, 8, 1), dt.datetime(2019, 8, 31))
 data.head()

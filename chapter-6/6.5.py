@@ -1,8 +1,4 @@
-import pandas as pd
-import numpy as np
-from sklearn import linear_model
-import random
-from utils.data_path import IRIS
+from utils import *
 
 iris = pd.read_csv(IRIS)
 x = iris.iloc[:, [0, 1, 2]].values

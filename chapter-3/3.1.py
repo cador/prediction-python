@@ -1,18 +1,4 @@
-from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-from utils.data_path import AIR_MILES, IRIS, MT_CARS, LAKE_HURON
-from matplotlib import pyplot as plt
-from utils.udf import pair_plot, corr_plot, ccf
-import pandas as pd
-import seaborn as sns
-import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
-from scipy.spatial.distance import pdist
-from scipy.cluster.hierarchy import linkage
-from scipy.cluster.hierarchy import dendrogram
-from sklearn.cross_decomposition import CCA
-
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+from utils import *
 
 air_miles = pd.read_csv(AIR_MILES)
 plot_acf(air_miles.miles, lags=10, title="air_miles 自相关性")

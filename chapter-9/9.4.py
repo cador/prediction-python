@@ -1,7 +1,4 @@
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-import keras
+from utils import *
 
 data = pd.read_csv('../tmp/p_data.csv')
 data = data.set_index('LOAD_DATE')

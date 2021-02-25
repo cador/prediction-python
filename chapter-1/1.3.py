@@ -2,19 +2,11 @@
 # Created: 2021-01-07
 # Last Modified: 2021-01-07
 # Version: 1.0.0
-# Description: 本节拟通过一个简单的例子说明用Python进行预测的主要步骤，旨在让各位读者了解用Python进行预测的基本过程
+# Description:
+#   本节拟通过一个简单的例子说明用Python进行预测的主要步骤，旨在让各位读者了解用Python进行预测的基本过程
 #   本节使用 wine_ind 数据集，它表示从1980年1月到1994年8月，葡萄酒生产商销售的容量不到1升的澳大利亚葡萄酒的总量
 
-from statsmodels.graphics.tsaplots import plot_acf
-from matplotlib import pyplot as plt
-from utils.data_path import WINE_IND
-import statsmodels.api as sm
-import seaborn as sns
-import pandas as pd
-import numpy as np
-
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+from utils import *
 
 """
  基于 wine_ind 数据集，使用 statsmodels.graphics.tsaplots 

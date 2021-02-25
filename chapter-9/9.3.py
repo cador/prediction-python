@@ -1,11 +1,4 @@
-import missingno
-import pandas as pd
-from matplotlib import pyplot as plt
-from utils.data_path import ENERGY_OUT, WEATHER
-from statsmodels.graphics.tsaplots import plot_pacf
-import seaborn as sns
-import datetime
-import numpy as np
+from utils import *
 
 data = pd.read_csv(ENERGY_OUT)
 missingno.matrix(data, labels=True, figsize=(45, 10))

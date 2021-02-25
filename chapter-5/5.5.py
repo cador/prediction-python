@@ -1,4 +1,4 @@
-import numpy as np
+from utils import *
 
 
 def c(s):

@@ -1,14 +1,4 @@
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-from utils.data_path import AGR_INDEX
-import statsmodels.tsa.stattools as stat
-from statsmodels.stats.diagnostic import acorr_ljungbox as lb_test
-from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
-plt.rcParams['axes.unicode_minus'] = False
+from utils import *
 
 # 加载基础数据
 ts_data = pd.read_csv(AGR_INDEX)

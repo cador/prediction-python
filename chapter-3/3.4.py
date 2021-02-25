@@ -1,16 +1,4 @@
-import pandas as pd
-from apyori import apriori
-import networkx as nx
-from fim import eclat
-import numpy as np
-import matplotlib.pyplot as plt
-from rpy2.robjects.packages import importr
-from rpy2.robjects import StrVector, ListVector
-from utils.data_path import AIR_PASSENGERS, ZAKI
-from utils.udf import arules_parse
-
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+from utils import *
 
 # 将AirPassengers数据转换成环比值
 ap = pd.read_csv(AIR_PASSENGERS)

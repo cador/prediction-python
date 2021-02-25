@@ -1,6 +1,4 @@
-import pandas as pd
-from statsmodels.formula.api import ols
-from utils.data_path import M_SET
+from utils import *
 
 out = pd.read_csv(M_SET)
 print(out.head())

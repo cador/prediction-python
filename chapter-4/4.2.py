@@ -1,8 +1,4 @@
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
+from utils import *
 
 x_list, y_list, type_list = [], [], []
 plt.figure(figsize=(5, 5))

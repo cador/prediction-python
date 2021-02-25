@@ -1,13 +1,4 @@
-from sklearn import tree
-import pandas as pd
-from sklearn.model_selection import train_test_split
-import numpy as np
-from matplotlib import pyplot as plt
-from utils.data_path import IRIS
-
-
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+from utils import *
 
 
 def gbrt_build(x, y, con_same=5, max_iter=10000, shrinkage=0.0005):

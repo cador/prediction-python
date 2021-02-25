@@ -1,19 +1,4 @@
-from scipy import stats
-from scipy.spatial.distance import correlation as d_cor
-from statsmodels.formula.api import ols
-from statsmodels.stats.anova import anova_lm
-from scipy.stats import chi2_contingency
-from sklearn.ensemble import RandomForestClassifier
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-import numpy as np
-import pandas as pd
-import random
-from utils.data_path import IRIS, WINE
-from utils.udf import gains, disc, gains_ratio, eval_func
-
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+from utils import *
 
 iris = pd.read_csv(IRIS)
 print(stats.pearsonr(iris['Sepal.Length'], iris['Petal.Length']))

@@ -1,6 +1,4 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+from utils import *
 
 fig = plt.figure(figsize=(10, 7))
 ax = Axes3D(fig)

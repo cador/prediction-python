@@ -1,7 +1,4 @@
-from rpy2.robjects.packages import importr
-from rpy2.robjects import FloatVector, StrVector, r
-from utils.data_path import GAME_CHURN
-import pandas as pd
+from utils import *
 
 """
 :: 安装R包 => Python代码

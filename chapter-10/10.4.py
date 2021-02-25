@@ -1,9 +1,4 @@
-import pandas_datareader.data as web
-from keras.layers import LSTM, Dense
-from keras.models import Sequential
-import matplotlib.pyplot as plt
-import datetime as dt
-import numpy as np
+from utils import *
 
 data = web.DataReader('600519.ss', 'yahoo', dt.datetime(2014, 1, 1), dt.datetime(2019, 9, 30))
 seq_len = 21

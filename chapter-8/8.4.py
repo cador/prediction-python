@@ -1,8 +1,4 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from utils.data_path import CANADA
-import statsmodels.tsa.stattools as stat
+from utils import *
 
 src_canada = pd.read_csv(CANADA)
 val_columns = ['e', 'prod', 'rw', 'U']

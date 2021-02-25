@@ -1,9 +1,4 @@
-import pandas as pd
-import numpy as np
-from utils.data_path import CANADA
-from keras.layers import SimpleRNN, Dense
-from keras.models import Sequential
-import matplotlib.pyplot as plt
+from utils import *
 
 src_canada = pd.read_csv(CANADA)
 tmp = src_canada.drop(columns=['year', 'season'])

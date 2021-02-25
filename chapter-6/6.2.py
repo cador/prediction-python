@@ -1,8 +1,4 @@
-import matplotlib.pyplot as plt
-from utils.data_path import M_SET, IRIS
-from sklearn.linear_model import RidgeCV
-import pandas as pd
-import numpy as np
+from utils import *
 
 
 def plot_ridge_curve(x, y, plist, k_max=1, q_num=10, intercept=True):

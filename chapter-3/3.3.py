@@ -1,15 +1,5 @@
-from sklearn.cluster import KMeans
-from utils.data_path import AIR_PASSENGERS
-from scipy.spatial.distance import pdist
-from scipy.cluster.hierarchy import linkage
-from scipy.cluster.hierarchy import dendrogram
-from sklearn.cluster import AgglomerativeClustering
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
+from utils import *
 
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
 
 # 加载数据、转换并进行标准化处理
 passengers = pd.read_csv(AIR_PASSENGERS)

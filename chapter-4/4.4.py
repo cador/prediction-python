@@ -1,14 +1,4 @@
-import matplotlib.pyplot as plt
-import random
-import pandas as pd
-import numpy as np
-import copy
-from utils.data_path import IRIS, CEMHT
-from utils.udf import g, times, add, log, gen_full_tree_exp, gen_side_tree_exp, \
-    random_get_tree, transform, plot_tree, gen_individuals, inter_cross, mutate, evaluation_regression, get_adjust
-
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+from utils import *
 
 print(g(times, g(add, g(np.sin, 5), 10), g(log, 46)))
 # 50.219458431129446

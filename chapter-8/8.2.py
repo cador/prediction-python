@@ -1,10 +1,4 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from utils.data_path import SUN_SPOT
-
-# Mac 系统，使用如下设置可解决图表中文乱码问题
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+from utils import *
 
 ss_data = pd.read_csv(SUN_SPOT)
 rows = len(ss_data)

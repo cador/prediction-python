@@ -1,9 +1,4 @@
-import pandas as pd
-import numpy as np
-from utils.data_path import CANADA
-from keras.layers import LSTM, Dense
-from keras.models import Sequential
-import matplotlib.pyplot as plt
+from utils import *
 
 SEQLEN = 15
 dim_in = 4

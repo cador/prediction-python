@@ -1,9 +1,4 @@
-import pandas as pd
-import numpy as np
-from keras.layers import LSTM, Dense
-from keras.models import Sequential
-from matplotlib import pyplot as plt
-import keras
+from utils import *
 
 data = pd.read_csv('../tmp/p_data.csv')
 tmp = data.set_index('LOAD_DATE')
@@ -22,6 +17,7 @@ Y_test = np.zeros((pred_len, dim_out), )
 for i in range(seq_len, t0.shape[0] - pred_len):
     Y_train[i - seq_len] = t0[i][0:96]
     X_train[i - seq_len] = np.c_[t0[(i - seq_len):i], t0[i + 1][96:].repeat(seq_len).reshape((6, seq_len)).T]
+
 for i in range(t0.shape[0] - pred_len, t0.shape[0]):
     Y_test[i - t0.shape[0] + pred_len] = t0[i][0:96]
     if i == t0.shape[0] - 1:
@@ -74,7 +70,7 @@ error = 0
 plt.figure(figsize=(20, 10))
 for index in range(0, 30):
     real_array = real_df[index][0:96]
-    pred_array = real_df[index][0:96]
+    pred_array = pred_df[index][0:96]
     pred_array[np.where(pred_array < 0)] = 0
     plt.subplot(5, 7, index + 1)
     plt.plot(range(96), real_array, '-', label="real", c='black')

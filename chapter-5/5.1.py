@@ -1,8 +1,4 @@
-import random
-import numpy as np
-import pandas as pd
-from sklearn import linear_model
-from utils.data_path import IRIS
+from utils import *
 
 
 def sample_split(df, __k):

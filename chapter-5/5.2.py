@@ -1,6 +1,4 @@
-import pandas as pd
-import numpy as np
-from utils.data_path import IRIS
+from utils import *
 
 iris = pd.read_csv(IRIS)
 x1 = iris['Sepal.Length'].values
