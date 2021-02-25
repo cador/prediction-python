@@ -14,6 +14,7 @@ for e in [(2, 'o', False), (3, '+', True)]:
     plt.plot(x, y1, symbol, x, y2, symbol, color='black')
 
 plt.show()
+
 classify_data = pd.DataFrame({'x': x_list, 'y': y_list, 'type': type_list})
 print(classify_data.head())
 

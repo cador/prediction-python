@@ -34,5 +34,5 @@ print(tmp_cut_mean)
 
 iris = pd.read_csv(IRIS)
 out = get_split_value(iris.Species, iris['Sepal.Length'].values)
-# 5.5
 print(out)
+# 5.5
