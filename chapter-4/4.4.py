@@ -3,13 +3,13 @@ from utils import *
 print(g(times, g(add, g(np.sin, 5), 10), g(log, 46)))
 # 50.219458431129446
 
-# 随机抽取 N 个特征下标
-nMax = 10
-N = random.choice(range(2, nMax + 1))
+# 随机抽取 feature_size 个特征下标
+n_max = 10
+feature_size = random.choice(range(2, n_max + 1))
 
 # 定义原始数据集中属性的下标1~8
 feature_idx = range(1, 9)
-select_feature_index = [random.choice(feature_idx) for i in range(N)] + [0] * int(2 ** np.ceil(np.log2(N)) - N)
+select_feature_index = [random.choice(feature_idx) for i in range(feature_size)] + [0] * int(2 ** np.ceil(np.log2(feature_size)) - feature_size)
 random.shuffle(select_feature_index)
 select_feature_index = ['X' + str(e) if e > 0 else '0' for e in select_feature_index]
 print(select_feature_index)
@@ -17,8 +17,8 @@ print(select_feature_index)
 tree_exp = gen_full_tree_exp(select_feature_index)
 print(tree_exp)
 
-N = random.choice(range(2, nMax + 1))
-select_feature_index = ['X' + str(e) for e in [random.choice(feature_idx) for i in range(N)]]
+feature_size = random.choice(range(2, n_max + 1))
+select_feature_index = ['X' + str(e) for e in [random.choice(feature_idx) for i in range(feature_size)]]
 print(select_feature_index)
 
 tree_exp = gen_side_tree_exp(select_feature_index)

@@ -61,7 +61,7 @@ plt.show()
 
 """
  从图中可知 91号 和 135号 样本存在明显的异常
- 现将这两个点在 value~r12_value 对应的散点图中标记出来
+ 现将这两个点在 销量~近12月_销量 对应的散点图中标记出来
 """
 abnormal_points = wine_ind.loc[[91, 135], ]
 plt.figure(figsize=(8, 5))
