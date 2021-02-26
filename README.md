@@ -16,16 +16,18 @@ Python 是一种面向对象的脚本语言，其代码简洁优美，类库丰�
 
 第一步，安装Anaconda
 
-您可参考 Anaconda 官网说明来安装 Anaconda，地址为：`https://www.anaconda.com/products/individual#download-section`
+您可参考官网说明来安装 Anaconda，地址为：
+
+`https://www.anaconda.com/products/individual#download-section`
 
 直接下载的链接地址：
 
  - Windows 64-Bit Graphical Installer (457 MB), <a href="https://repo.anaconda.com/archive/Anaconda3-2020.11-Windows-x86_64.exe">下载</a>
- - Windows 32-Bit Graphical Installer (403 MB), `https://repo.anaconda.com/archive/Anaconda3-2020.11-Windows-x86.exe` 
- - MacOS 64-Bit Graphical Installer (435 MB), `https://repo.anaconda.com/archive/Anaconda3-2020.11-MacOSX-x86_64.pkg`
- - MacOS 64-Bit Command Line Installer (428 MB), `https://repo.anaconda.com/archive/Anaconda3-2020.11-MacOSX-x86_64.sh`
- - Linux 64-Bit (x86) Installer (529 MB), `https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh`
- - Linux 64-Bit (Power8 and Power9) Installer (279 MB), `https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-ppc64le.sh`
+ - Windows 32-Bit Graphical Installer (403 MB), <a href="https://repo.anaconda.com/archive/Anaconda3-2020.11-Windows-x86.exe">下载</a>
+ - MacOS 64-Bit Graphical Installer (435 MB), <a href="https://repo.anaconda.com/archive/Anaconda3-2020.11-MacOSX-x86_64.pkg">下载</a>
+ - MacOS 64-Bit Command Line Installer (428 MB), <a href="https://repo.anaconda.com/archive/Anaconda3-2020.11-MacOSX-x86_64.sh">下载</a>
+ - Linux 64-Bit (x86) Installer (529 MB), <a href="https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh">下载</a>
+ - Linux 64-Bit (Power8 and Power9) Installer (279 MB), <a href="https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-ppc64le.sh">下载</a>
 
 第二步，自定义Python环境
 
