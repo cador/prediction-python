@@ -79,11 +79,11 @@ plt.close()
 corr_plot(corr, c_map="Spectral", s=2000)
 
 # 相关图 - 相关层次图
-mtCars = pd.read_csv(MT_CARS)
-mtCars.drop(columns="_", inplace=True)
+mt_cars = pd.read_csv(MT_CARS)
+mt_cars.drop(columns="_", inplace=True)
 
 # 计算第4种相异性度量
-distance = np.sqrt(1 - mtCars.corr() * mtCars.corr())
+distance = np.sqrt(1 - mt_cars.corr() * mt_cars.corr())
 row_clusters = linkage(pdist(distance, metric='euclidean'), method='ward')
 dendrogram(row_clusters, labels=distance.index)
 plt.tight_layout()
@@ -92,9 +92,9 @@ plt.plot([0, 2000], [1.5, 1.5], c='gray', linestyle='--')
 plt.show()
 
 # 互相关分析
-lakeHuron = pd.read_csv(LAKE_HURON)
-lhData = lakeHuron.query("1937 <= year <= 1960")
-X, Y = air_miles.miles, lhData.level
+lake_huron = pd.read_csv(LAKE_HURON)
+lh_data = lake_huron.query("1937 <= year <= 1960")
+X, Y = air_miles.miles, lh_data.level
 out = ccf(X, Y, lag_max=10)
 for i in range(len(out)):
     plt.plot([i, i], [0, out[i]], 'k-')
