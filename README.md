@@ -3,7 +3,9 @@
 
 本人新书《Python预测之美 : 数据分析与算法实战》已于2020年7月1日印刷出版，欢迎关注。
 
-京东链接：<a href="https://item.jd.com/12685261.html">点击打开</a>。
+<img src="http://image.cador.cn/resource/05efe48a5011f926.jpg" />
+
+京东链接：<a href="https://item.jd.com/12685261.html" target="_blank">点击打开</a>。
 
 《Python预测之美-数据分析与算法实战》简介
 
